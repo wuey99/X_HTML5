@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest>
+
+	<folder name="root">
+	
+		<folder name="main">
+		
+			<resource name="Test" type=".as" path="Assets" src="" dst="Test.js">
+				<classX name="ShieldClass"/>
+				<classX name="FighterClass"/>
+			</resource>
+									
+		</folder>
+					
+	</folder>
+
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest>
+
+	<folder name="root">
+	
+		<folder name="system">
+		
+			<resource name="XLogicObjectXMap" type=".as" path="Common\\Containers\\XLogicObjectXMap" src="XLogicObjectXMap.as" dst="XLogicObjectXMap.swf">
+				<classX name="XLogicObjectXMap"/>
+			</resource>
+									
+		</folder>
+					
+	</folder>
+
+</manifest>

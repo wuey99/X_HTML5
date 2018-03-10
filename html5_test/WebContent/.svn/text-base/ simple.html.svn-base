@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canvas test</title>
+
+<!-- Pull in canvas support for IE -->
+<!--[if IE]><script src="excanvas.js"></script><![endif]-->
+
+<script src="X/g$.js"></script>
+<script src="X/Debug/XDebug.js"></script>
+<script src="X/XML/xmldom.js"></script>
+<script src="X/Collections/XDict.js"></script>
+<script src="X/Task/XTaskSubManager.js"></script>
+<script src="X/Task/XNumber.js"></script>
+<script src="X/Task/XTask.js"></script>
+<script src="X/Task/XTaskManager.js"></script>
+<script src="X/Geom/XMatrix.js"></script>
+<script src="X/Geom/XPoint.js"></script>
+<script src="X/Geom/XRect.js"></script>
+<script src="X/HTML5/Event5.js"></script>
+<script src="X/HTML5/MouseEvent5.js"></script>
+<script src="X/HTML5/Point5.js"></script>
+<script src="X/HTML5/DisplayObjectContainer5.js"></script>
+<script src="X/HTML5/Sprite5.js"></script>
+<script src="X/HTML5/Stage5.js"></script>
+<script src="X/HTML5/TextField5.js"></script>
+<script src="X/HTML5/Image5.js"></script>
+<script src="X/HTML5/ImageStrip5.js"></script>
+<script src="X/HTML5/MovieClip5.js"></script>
+<script src="X/Sound/XSoundManager.js"></script>
+<script src="X/XML/XSimpleXMLNode.js"></script>
+<script src="X/XML/XSimpleXMLDocument.js"></script>
+<script src="X/Resource/XClass.js"></script>	
+<script src="X/Resource/XResourceName.js"></script>
+<script src="X/Resource/Types/XSWFResource.js"></script>
+<script src="X/Resource/Types/XSWFURLResource.js"></script>
+<script src="X/Resource/Manager/XSubResourceManager.js"></script>
+<script src="X/Resource/Manager/XProjectManager.js"></script>
+<script src="X/Resource/XResource.js"></script>
+<script src="X/Utils/XClassNameToIndex.js"></script>
+<script src="X/Signals/XSignal.js"></script>
+<script src="X/Signals/XSignalManager.js"></script>
+<script src="X/MVC/XControllerBase.js"></script>
+<script src="X/MVC/XModelBase.js"></script>
+<script src="X/MVC/XViewBase.js"></script>
+<script src="X/MVC/XControllerBase.js"></script>
+<script src="X/Sound/XSoundTaskManager.js"></script>
+<script src="X/Sound/XSoundTask.js"></script>
+<script src="X/XMap/XMapItemModel.js"></script>
+<script src="X/XMap/XMapLayerModel.js"></script>
+<script src="X/XMap/XSubmapModel.js"></script>
+<script src="X/XMap/XMapModel.js"></script>
+<script src="X/World/Sprite/XRegistration_impl.js"></script>
+<script src="X/World/Sprite/XSprite0.js"></script>
+<script src="X/World/Sprite/XSprite.js"></script>
+<script src="X/World/Sprite/XDepthSprite.js"></script>
+<script src="X/World/Logic/XLogicObject.js"></script>
+<script src="X/World/Logic/XLogicObjectCX.js"></script>
+<script src="X/Keyboard/XKeyboardLogicObject.js"></script>
+<script src="X/Keyboard/XKeyboardManager.js"></script>
+<script src="X/World/XLogicManager.js"></script>
+<script src="X/World/XSpriteLayer.js"></script>
+<script src="X/World/XLogicManager.js"></script>
+<script src="X/World/XWorld.js"></script>
+<script src="X/Resource/Manager/XProjectManager.js"></script>
+<script src="X/Resource/Manager/XSubResourceManager.js"></script>
+<script src="X/XApp.js"></script>
+
+<script src="Test/TestObjectX.js"></script>
+<script src="Test/TestApp.js"></script>
+
+<script type="text/javascript">
+	window.onload = function() {
+		var c$ = {};
+
+		var __canvas = document.getElementById ('canvasX');
+
+		// Is element in the DOM and does browser support canvas
+		if (__canvas && __canvas.getContext) {
+			g$.import(c$, "$Main.*");
+
+			g$.trace (": simple: ", g$.import, g$.setStage);
+			
+			var __testApp = new c$.TestApp();
+			__testApp.setup();
+		}
+	}
+</script>
+</head>
+<body>
+<h1>HTML5 Canvas</h1>
+<canvas id="canvasX" width="800" height="600">
+     <p>Your browser doesn't support canvas.</p>
+   </canvas>
+</body>
+</html>
